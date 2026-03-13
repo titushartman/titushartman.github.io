@@ -1,0 +1,189 @@
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
+a:hover {
+  border-bottom: none;
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.parents-row {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr;
+  place-items: stretch;
+  background-color: Yellow;
+  padding: 10px 10px 10px 10px;  /* between content and border */
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 0 0 10px 0;  /* outside the border */
+}
+
+.parent-box {
+  display: block;
+  background-color: White;
+  text-align: center;
+  color: black;
+  bottom: 16px;
+  right: 32px;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 10px 10px 10px 10px;  /* outside the border */
+}
+
+.label-box {
+  display: flex;
+  align-items: center;
+}
+
+.children-row {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  align-content: center;
+  background-color: Pink;
+  padding: 10px 10px 10px 10px;  /* between content and border */
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 0 0 10px 0;  /* outside the border */
+}
+
+.children-flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: Pink;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 10px 0 10px;
+}
+
+.family-grid {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  background-color: Gainsboro;
+  gap: 8px;
+  padding: 8px;
+  margin: 4px;
+  border: 1px solid black;
+  border-radius: 8px;
+
+}
+
+.banner {
+  position: sticky;
+  text-align: center;
+  color: black;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.stamp {
+  position: fixed;
+  text-align: center;
+  color: black;
+  bottom: 16px;
+  right: 32px;
+  padding: 0 10px 0 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  z-index: 999;
+}
+
+/* index */
+.extra-grid-2col {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  margin: 4px;
+}
+
+/* index, landing, series */
+.click-box {
+  display: block;
+  cursor: pointer;
+  background-color: White;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 8px;
+}
+
+/* landing, series */
+.center-image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* series */
+.thumbnail-flexbox {
+  display: flex;
+  background-color: Gainsboro;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 4px;
+}
+
+/* ubucación */
+.scroll-outer {
+  display: grid;
+  height: 87dvh;
+  grid-template-columns: 1fr 5fr;
+  justify-items: top;
+  align-items: top;
+}
+
+/* ubicación */
+.nav-grid {
+  display: grid;
+  background-color: Gainsboro;
+  grid-template-columns: auto;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 4px;
+}
+
+/* ubicación */
+.scroll-inner-grid {
+  display: grid;
+  background-color: Gainsboro;
+  height: 87dvh;
+  overflow-y: auto;
+  grid-template-columns: auto;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 4px;
+}
