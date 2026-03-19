@@ -22,7 +22,8 @@ span {
 .parents-row {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr;
-  place-items: stretch;
+  align-items: center;
+  justify-items: stretch;
   background-color: Yellow;
   padding: 10px 10px 10px 10px;  /* between content and border */
   border: 1px solid black;
@@ -30,9 +31,24 @@ span {
   margin: 0 0 10px 0;  /* outside the border */
 }
 
-.parent-box {
+.person-box {
   display: block;
   background-color: White;
+  height: fit-content;
+  text-align: center;
+  color: black;
+  bottom: 16px;
+  right: 32px;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 10px 10px 10px 10px;  /* outside the border */
+}
+
+.person-box-fairview {
+  display: block;
+  background-color: Gainsboro;
+  height: fit-content;
   text-align: center;
   color: black;
   bottom: 16px;
@@ -46,6 +62,7 @@ span {
 .label-box {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .children-row {
@@ -103,87 +120,3 @@ span {
   z-index: 999;
 }
 
-/* index */
-.extra-grid-2col {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-items: center;
-  align-items: center;
-  gap: 8px;
-  padding: 8px;
-  margin: 4px;
-}
-
-/* index, landing, series */
-.click-box {
-  display: block;
-  cursor: pointer;
-  background-color: White;
-  justify-content: center;
-  align-items: center;
-  padding: 8px;
-  border: 1px solid black;
-  border-radius: 8px;
-  margin: 8px;
-}
-
-/* landing, series */
-.center-image {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* series */
-.thumbnail-flexbox {
-  display: flex;
-  background-color: Gainsboro;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 8px;
-  padding: 8px;
-  border: 1px solid black;
-  border-radius: 8px;
-  margin: 4px;
-}
-
-/* ubucación */
-.scroll-outer {
-  display: grid;
-  height: 87dvh;
-  grid-template-columns: 1fr 5fr;
-  justify-items: top;
-  align-items: top;
-}
-
-/* ubicación */
-.nav-grid {
-  display: grid;
-  background-color: Gainsboro;
-  grid-template-columns: auto;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  gap: 8px;
-  padding: 16px;
-  border: 1px solid black;
-  border-radius: 8px;
-  margin: 4px;
-}
-
-/* ubicación */
-.scroll-inner-grid {
-  display: grid;
-  background-color: Gainsboro;
-  height: 87dvh;
-  overflow-y: auto;
-  grid-template-columns: auto;
-  justify-content: space-evenly;
-  justify-items: center;
-  align-items: center;
-  gap: 16px;
-  padding: 16px;
-  border: 1px solid black;
-  border-radius: 8px;
-  margin: 4px;
-}
