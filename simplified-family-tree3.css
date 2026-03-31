@@ -1,0 +1,130 @@
+.display-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.binary-tree {
+/*  width: fit-content; */
+}
+
+.binary-tree div {                /* null node */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* L and R children */
+  grid-template-rows: auto 1fr;   /* data above, tree below */
+  gap: 0.5rem;
+  position: relative;                /* relative to the span (?) */
+  margin-bottom: 1rem;               /* vertical separation between nodes */
+}
+
+/* Hide binary trees by default */
+.binary-tree {
+  display: none;
+}
+
+/* Show the active binary trees */
+.binary-tree.active {
+  display: grid;
+}
+
+.binary-tree span {    /* the node itself, with the data */
+  grid-column: 1 / 3;  /* occupy both columns */
+  border: 1px solid;
+  width: 9rem;
+  height: 4rem;
+  border-radius: 25%;
+  display: grid;       /* center the content */
+  place-items: center;
+  text-align: center;
+  margin: auto auto;   /* distributes nodes horizontally */
+}
+
+.binary-tree span::after {
+  content: "";              /* to be visible */
+  position: absolute;       /* position relative to the div, not the span */
+  width: 50%;
+  height: 1.5rem;           /* margin-bottom + gap */
+  left: 50%;
+  bottom: 0;
+  transform: translateY(100%);
+  background: linear-gradient(to top right, #0000 49%, #000 0 51%, #0000 0);
+}
+
+.binary-tree :nth-child(2) > span::after {
+  left: auto;
+  right: 50%;
+  background: linear-gradient(to top left, #0000 49%, #000 0 51%, #0000 0);
+}
+
+.binary-tree > div > span::after {
+  content: none;
+}
+
+.binary-tree.ext > div:first-child > span {
+  background: #666666;
+  color: white;
+}
+
+/* Basic button styling */
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.binary-tree .tab-btn {
+  background: #ddd;
+  cursor: pointer;
+}
+
+.binary-tree .tab-btn.active {
+  background: #666666;
+  color: white;
+}
+
+/* display containers */
+.banner {
+  position: sticky;
+  text-align: center;
+  color: black;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.family-grid {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  background-color: Gainsboro;
+  gap: 8px;
+  padding: 8px;
+  margin: 4px;
+  border: 1px solid black;
+  border-radius: 8px;
+
+}
+
+.root-row {
+  display: grid;
+/*  grid-template-columns: 1fr 3fr 3fr; */
+  align-items: center;
+  justify-items: stretch;
+  background-color: White;
+  padding: 10px 10px 10px 10px;  /* between content and border */
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 0 0 10px 0;  /* outside the border */
+}
+
+.extension-row {
+  display: grid;
+/*  grid-template-columns: 1fr 6fr; */
+  align-content: center;
+  background-color: White;
+  padding: 10px 10px 10px 10px;  /* between content and border */
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 0 0 10px 0;  /* outside the border */
+}
+
