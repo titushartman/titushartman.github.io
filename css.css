@@ -19,6 +19,18 @@ span {
   line-height: normal;
 }
 
+.click-box {
+  display: block;
+  cursor: pointer;
+  background-color: White;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 8px;
+}
+
 .parents-row {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr;
