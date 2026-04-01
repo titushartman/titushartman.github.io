@@ -107,7 +107,6 @@
 
 .root-row {
   display: grid;
-/*  grid-template-columns: 1fr 3fr 3fr; */
   align-items: center;
   justify-items: stretch;
   background-color: White;
@@ -119,7 +118,6 @@
 
 .extension-row {
   display: grid;
-/*  grid-template-columns: 1fr 6fr; */
   align-content: center;
   background-color: White;
   padding: 10px 10px 10px 10px;  /* between content and border */
@@ -133,5 +131,6 @@
   width: 25px;
   background-color: blue;
   border-radius: 50%;
+  border: 1px solid black;
   display: inline-block;
 }
