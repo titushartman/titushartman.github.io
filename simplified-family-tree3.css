@@ -128,3 +128,10 @@
   margin: 0 0 10px 0;  /* outside the border */
 }
 
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+}
