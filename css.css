@@ -19,6 +19,16 @@ span {
   line-height: normal;
 }
 
+#mobile-dialog {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #mobile-dialog {
+    display: block;
+  }
+}
+
 .click-box {
   display: block;
   cursor: pointer;
