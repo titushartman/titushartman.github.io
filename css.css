@@ -24,7 +24,7 @@ span {
 }
 
 @media screen and (max-width: 1024px) {
-  #mobile-dialog {
+  #mobile-dialog:open {
     display: block;
   }
 }
